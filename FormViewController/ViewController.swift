@@ -11,19 +11,22 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        var detailViewModel: DetailRowViewModel = .init(title: "Test", detail: "Detail")
-        detailViewModel.style = [.selectionStyle(.none)]
-        detailViewModel.onDisplay { cell, indexPath in
-            print("WillDisplay: \(cell.viewModel?.title)")
-        }
 
-        detailViewModel.didSelect { cell, indexPath in
-            print("DidSelect: \(cell.viewModel?.title)")
-        }
+        let firstNameViewModel: DetailRowViewModel = .init(title: "First Name", detail: "Max")
+        let firstNameRow: Row<DetailRowViewModel> = .init(cell: DetailRow.self, viewModel: firstNameViewModel)
 
-        var detailRow: Row<DetailRowViewModel> = .init(cell: DetailRow.self, viewModel: detailViewModel)
+        let lastNameViewModel: DetailRowViewModel = .init(title: "Last Name", detail: "Musterman")
+        let lastNameRow: Row<DetailRowViewModel> = .init(cell: DetailRow.self, viewModel: lastNameViewModel)
 
-        let formViewCtrl: FormViewController = .init(withSections: [.init(rows: [detailRow])])
+        let switchViewModel: SwitchRowViewModel = .init(title: "Send Data", isOn: true)
+        let switchRow: Row<SwitchRowViewModel> = .init(cell: SwitchRow.self, viewModel: switchViewModel)
+
+        let formViewCtrl: FormViewController = .init(
+            withSections: [
+                .init(rows: [firstNameRow, lastNameRow]),
+                .init(rows: [switchRow])
+            ]
+        )
 
         addChild(formViewCtrl)
         formViewCtrl.didMove(toParent: self)

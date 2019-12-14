@@ -15,6 +15,7 @@
 		DE422657239DB63C00F83BA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE422655239DB63C00F83BA8 /* LaunchScreen.storyboard */; };
 		DE42265F239DB66100F83BA8 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42265E239DB66100F83BA8 /* FormViewController.swift */; };
 		DE70FDE423A59B0100C58806 /* TableViewCellStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70FDE323A59B0100C58806 /* TableViewCellStyle.swift */; };
+		DE70FDE623A5A68E00C58806 /* SwitchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70FDE523A5A68E00C58806 /* SwitchRow.swift */; };
 		DE971C3A23A1BFE90005AA25 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE971C3923A1BFE90005AA25 /* Section.swift */; };
 		DE971C3C23A1C0020005AA25 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE971C3B23A1C0020005AA25 /* TableViewCell.swift */; };
 		DE971C3E23A1C0220005AA25 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE971C3D23A1C0220005AA25 /* Row.swift */; };
@@ -35,6 +36,7 @@
 		DE422658239DB63C00F83BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE42265E239DB66100F83BA8 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		DE70FDE323A59B0100C58806 /* TableViewCellStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellStyle.swift; sourceTree = "<group>"; };
+		DE70FDE523A5A68E00C58806 /* SwitchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchRow.swift; sourceTree = "<group>"; };
 		DE971C3923A1BFE90005AA25 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		DE971C3B23A1C0020005AA25 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		DE971C3D23A1C0220005AA25 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DE971C4723A1C2040005AA25 /* DetailRow.swift */,
+				DE70FDE523A5A68E00C58806 /* SwitchRow.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				DE971C4823A1C2040005AA25 /* DetailRow.swift in Sources */,
 				DE42264B239DB63900F83BA8 /* AppDelegate.swift in Sources */,
 				DE971C3C23A1C0020005AA25 /* TableViewCell.swift in Sources */,
+				DE70FDE623A5A68E00C58806 /* SwitchRow.swift in Sources */,
 				DE42265F239DB66100F83BA8 /* FormViewController.swift in Sources */,
 				DE971C3E23A1C0220005AA25 /* Row.swift in Sources */,
 				DE971C4323A1C08D0005AA25 /* UIViewExtension.swift in Sources */,
